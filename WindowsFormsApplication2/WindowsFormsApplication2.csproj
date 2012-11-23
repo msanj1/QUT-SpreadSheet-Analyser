@@ -70,6 +70,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.3.1.2\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="SpreadSheetExcel">
       <HintPath>..\..\SpreadSheetExcel\SpreadSheetExcel\bin\Debug\SpreadSheetExcel.dll</HintPath>
     </Reference>
@@ -123,7 +126,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -161,7 +167,12 @@
   <ItemGroup>
     <Content Include="excel_2003_01.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelMP\ExcelMP.csproj">
+      <Project>{7CC05562-1AF7-40B3-848F-2DF804707F52}</Project>
+      <Name>ExcelMP</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

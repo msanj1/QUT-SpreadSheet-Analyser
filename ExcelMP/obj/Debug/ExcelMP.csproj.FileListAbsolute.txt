@@ -1,0 +1,7 @@
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\bin\Debug\ExcelMP.dll
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\bin\Debug\ExcelMP.pdb
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\bin\Debug\EPPlus.dll
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\bin\Debug\EPPlus.xml
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\obj\Debug\ExcelMP.dll
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\obj\Debug\ExcelMP.pdb
+C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\obj\Debug\ExcelMP.csprojResolveAssemblyReference.cache

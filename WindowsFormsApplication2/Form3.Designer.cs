@@ -44,6 +44,9 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label9
@@ -164,13 +167,40 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(207, 225);
+            this.button1.Location = new System.Drawing.Point(324, 264);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 48;
             this.button1.Text = "save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(12, 226);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(328, 20);
+            this.textBox9.TabIndex = 49;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 210);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 13);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Output Excel File";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(346, 225);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(53, 20);
+            this.button2.TabIndex = 51;
+            this.button2.Text = "Browse";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
@@ -179,7 +209,10 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(305, 260);
+            this.ClientSize = new System.Drawing.Size(406, 300);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox7);
@@ -223,5 +256,8 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
     }
 }

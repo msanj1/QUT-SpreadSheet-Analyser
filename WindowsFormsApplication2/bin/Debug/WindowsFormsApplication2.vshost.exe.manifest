@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelMP.dll" size="12288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelMP.dll" size="9216">
       <assemblyIdentity name="ExcelMP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>s6iQ6JYFqapc1ZDeOFXoI85hCc4=</dsig:DigestValue>
+        <dsig:DigestValue>HWQEzKexiuErPD8NsEC7wByMx7A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>VCa1NCi/RX+NqiOUDS+Twb3KHSs=</dsig:DigestValue>
+        <dsig:DigestValue>rdHWrTMIx0I2udm8WxL/LbEQh/Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

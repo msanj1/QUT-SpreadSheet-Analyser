@@ -5,6 +5,7 @@ using System.Text;
 using OfficeOpenXml;
 using System.IO;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace ExcelMP
 {
@@ -52,7 +53,7 @@ namespace ExcelMP
                         double avg = output.Take(5).Average();
                         allMarks[cell.Value.ToString()] = avg;
                         Names.Add(secSheet.Cells[i, 2].Value.ToString());
-                        mainSheet.SetValue(i, 1, cell.Value.ToString()); //setting ID
+                        mainSheet.SetValue(i, 1, Filter(cell.Value.ToString())); //setting ID
                         mainSheet.SetValue(i, 2, secSheet.Cells[i, 2].Value.ToString()); //setting Name
                         mainSheet.SetValue(i, 3, avg); //setting avg
                         //output = ((total / totalMark) * percentage) + "%";
@@ -124,12 +125,12 @@ namespace ExcelMP
                     {
                         if (secSheet.Cells[i, 3].Value != null)
                         {
-                            allMarks[secSheet.Cells[i, 1].Value.ToString()] = Convert.ToDouble(secSheet.Cells[i, 3].Value);
+                            allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = Convert.ToDouble(secSheet.Cells[i, 3].Value);
 
                         }
                         else
                         {
-                            allMarks[secSheet.Cells[i, 1].Value.ToString()] = 0.0d;
+                            allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = 0.0d;
                         }
                     }
                 }
@@ -241,6 +242,12 @@ namespace ExcelMP
 
 
             }
+        }
+
+        private static string Filter(string input)
+        {
+            Regex digitsOnly = new Regex(@"[^\d]");
+            return digitsOnly.Replace(input, "");
         }
     }
 }

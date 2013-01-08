@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>U1pqhs3P1PZUVWrTC0NOc80HlzE=</dsig:DigestValue>
+        <dsig:DigestValue>b7uVxFWjsyLrr5hiVHGsWnzEJ2o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,13 +98,13 @@
       <dsig:DigestValue>UMLlbq4oDH+OUFdi4RjGiaMz1kk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WindowsFormsApplication2.exe.config" size="1665">
+  <file name="WindowsFormsApplication2.exe.config" size="1644">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>65dPBhXph7E4HWcRYsNKuK3a3Qk=</dsig:DigestValue>
+      <dsig:DigestValue>+UxxA+oLuJANC2ssIPKaaCe6TOU=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

@@ -32,7 +32,7 @@
         <value>0</value>
       </setting>
       <setting name="OutputFile" serializeAs="String">
-        <value>C:\Users\mohsen\Desktop\output.xlsx</value>
+        <value>C:\output.xlsx</value>
       </setting>
     </WindowsFormsApplication1.Properties.Settings>
   </userSettings>

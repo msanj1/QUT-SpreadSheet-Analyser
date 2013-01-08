@@ -27,7 +27,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="OutputFile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\mohsen\Desktop\output.xlsx</Value>
+      <Value Profile="(Default)">C:\output.xlsx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

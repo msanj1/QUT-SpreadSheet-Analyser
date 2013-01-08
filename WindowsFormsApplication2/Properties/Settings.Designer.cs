@@ -121,7 +121,7 @@ namespace WindowsFormsApplication1.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\mohsen\\Desktop\\output.xlsx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\output.xlsx")]
         public string OutputFile {
             get {
                 return ((string)(this["OutputFile"]));

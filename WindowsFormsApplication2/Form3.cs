@@ -60,6 +60,7 @@ namespace WindowsFormsApplication1
             odf.Filter = ".XLSX | *.xlsx";
             odf.ShowDialog();
             textBox9.Text = odf.FileName;
+            textBox9.Text = Properties.Settings.Default.OutputFile;
         }
     }
 }

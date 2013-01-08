@@ -10,6 +10,7 @@ using System.IO;
 using SpreadSheetExcel;
 using System.Threading;
 using ExcelMP;
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
@@ -18,6 +19,7 @@ namespace WindowsFormsApplication1
         string comp;
         public Form1()
         {
+          
             Thread t = new Thread(new ThreadStart(splashscreen));
             t.Start();
             Thread.Sleep(5000);
@@ -27,6 +29,7 @@ namespace WindowsFormsApplication1
             
             textBox4.Text = "1";
             ExcelMP.ExMP.CreateFile(Properties.Settings.Default.OutputFile);
+
         }
 
         public void splashscreen() {
@@ -44,13 +47,23 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string temp = textBox2.Text;
+          
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Open the excel file that is used for mark comparison";
             ofd.Filter = ".XLSX | *.xlsx";
             ofd.ShowDialog();
             //string name =  ofd.;
             comp = ofd.FileName;
-            textBox2.Text = comp;
+            if (temp != "" && comp == "")
+            {
+                textBox2.Text = temp;
+            }
+            else
+            {
+                textBox2.Text = comp;
+            }
+          
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -12,6 +12,7 @@ namespace ExcelMP
     public class ExMP
     {
 
+
         public static void AssessQuiz(string path1, string path2, int sheet1, int sheet2, int totalMark, int percentage)
         {
             FileInfo mainFile = new FileInfo(path1);
@@ -21,8 +22,8 @@ namespace ExcelMP
                 ExcelPackage mainPackage = new ExcelPackage(mainFile); //original file for edit
                 ExcelWorksheet mainSheet = mainPackage.Workbook.Worksheets[sheet1];
 
-                Dictionary<string, double> allMarks = new Dictionary<string, double>();
-                List<string> Names = new List<string>();
+               
+               
                 using (ExcelPackage secPackage = new ExcelPackage(secondaryFile))
                 {
                     ExcelWorksheet secSheet = secPackage.Workbook.Worksheets[sheet2];
@@ -32,9 +33,18 @@ namespace ExcelMP
                         List<double> quizMarks = new List<double>();
                         for (int c = 3; c <= address_space2.End.Column; c++) //columns
                         {
-                            if (secSheet.Cells[i, c].Value != null)
+                            if (secSheet.Cells[i, c].Value != null )
                             {
-                                quizMarks.Add((double)secSheet.Cells[i, c].Value);
+                                string value = Filter(secSheet.Cells[i, c].Value.ToString()); //removing unnecessary characters from them excel file
+                                if (value != "")
+                                {
+                                    quizMarks.Add(Convert.ToDouble(value));
+                                }
+                                else
+                                {
+                                    quizMarks.Add(0);
+                                }
+                                
                             }
                             else
                             {
@@ -51,19 +61,23 @@ namespace ExcelMP
                                      orderby mark descending
                                      select mark;
                         double avg = output.Take(5).Average();
-                        allMarks[cell.Value.ToString()] = avg;
-                        Names.Add(secSheet.Cells[i, 2].Value.ToString());
-                        mainSheet.SetValue(i, 1, Filter(cell.Value.ToString())); //setting ID
-                        mainSheet.SetValue(i, 2, secSheet.Cells[i, 2].Value.ToString()); //setting Name
-                        mainSheet.SetValue(i, 3, avg); //setting avg
-                        //output = ((total / totalMark) * percentage) + "%";
-                        double perc = (avg / totalMark) * percentage;
-                        mainSheet.SetValue(i, 4, perc); //setting percentage
+                        //allMarks[cell.Value.ToString()] = avg;
+                        //Names.Add(secSheet.Cells[i, 2].Value.ToString());
+                        if (cell.Value != null)
+                        {
+                            mainSheet.SetValue(i, 1, Filter(cell.Value.ToString())); //setting ID
+                            mainSheet.SetValue(i, 2, secSheet.Cells[i, 2].Value.ToString()); //setting Name
+                            mainSheet.SetValue(i, 3, avg); //setting avg
+                            //output = ((total / totalMark) * percentage) + "%";
+                            double perc = (avg / totalMark) * percentage;
+                            mainSheet.SetValue(i, 4, perc); //setting percentage
+                        }
+                       
                     }
 
 
                 }
-
+                mainPackage.Dispose();
                 mainPackage.Save();
 
 
@@ -106,8 +120,8 @@ namespace ExcelMP
             Dictionary<int, int> ExamColumnMapping = new Dictionary<int, int>() 
             { 
                 {1 , 5 },
-                {2,7   },
-                {3,9   }
+                {2,  7 },
+                {3,  9 }
             };
 
             FileInfo mainFile = new FileInfo(path1);
@@ -121,16 +135,33 @@ namespace ExcelMP
                 {
                     ExcelWorksheet secSheet = secPackage.Workbook.Worksheets[sheet2];
                     var address_space = secSheet.Dimension;
-                    for (int i = 2; i <= address_space.End.Row; i++)
+                    for (int i = 2; i <= address_space.End.Row; i++) //loop through rows starting with
                     {
-                        if (secSheet.Cells[i, 3].Value != null)
+                        if (secSheet.Cells[i, 3].Value != null )
                         {
-                            allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = Convert.ToDouble(secSheet.Cells[i, 3].Value);
+                            if ((secSheet.Cells[i, 1].Value != null))
+                            {
+                                  allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = Convert.ToDouble(Filter(secSheet.Cells[i, 3].Value.ToString())); //reading Ids and Marks ???
+                                  string value = Filter(secSheet.Cells[i, 3].Value.ToString());
+                                  if (value != "")
+                                  {
+                                       allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = Convert.ToDouble(Filter(value));
+                                  }
+                                  else
+                                  {
+                                     allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = 0.0d; //setting the value to be red to zero
+
+                                  }
+                            }
 
                         }
                         else
                         {
-                            allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = 0.0d;
+                            if ((secSheet.Cells[i, 1].Value != null))
+                            {
+                                allMarks[Filter(secSheet.Cells[i, 1].Value.ToString())] = 0.0d;
+                            }
+                           
                         }
                     }
                 }
@@ -246,9 +277,12 @@ namespace ExcelMP
 
         private static string Filter(string input)
         {
-            Regex digitsOnly = new Regex(@"[^\d]");
+            Regex digitsOnly = new Regex(@"[^\d\.,]");
             return digitsOnly.Replace(input, "");
         }
+
+
+       
     }
 }
         

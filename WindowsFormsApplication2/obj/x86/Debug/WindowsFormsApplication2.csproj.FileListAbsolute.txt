@@ -57,3 +57,4 @@ C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\ob
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.TrustInfo.xml
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe.manifest
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.application
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.ResolveComReference.cache

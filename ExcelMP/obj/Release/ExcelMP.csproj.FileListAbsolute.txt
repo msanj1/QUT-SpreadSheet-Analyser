@@ -5,3 +5,11 @@ C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\bin\Release\EPPlus.xml
 C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.csprojResolveAssemblyReference.cache
 C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.dll
 C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.pdb
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\bin\Release\ExcelMP.dll
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\bin\Release\ExcelMP.pdb
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\bin\Release\EPPlus.dll
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\bin\Release\EPPlus.xml
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.csprojResolveAssemblyReference.cache
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.csproj.ResolveComReference.cache
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.dll
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\ExcelMP\obj\Release\ExcelMP.pdb

@@ -97,6 +97,7 @@ namespace WindowsFormsApplication1
                 }
                 ExMP.TotalPercentage(input, inputSheetNo);
                 MessageBox.Show("Finished Editing Files");
+                ExMP.OpenXLSXFile(input);
             }
             catch (Exception error)
             {

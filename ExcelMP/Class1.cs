@@ -6,11 +6,16 @@ using OfficeOpenXml;
 using System.IO;
 using System.Data;
 using System.Text.RegularExpressions;
-
+using Microsoft.Office.Interop.Excel;
+using OfficeOpenXml.Style;
+using System.Drawing;
+using System.Globalization;
+using System.Threading;
 namespace ExcelMP
 {
     public class ExMP
     {
+       
 
 
         public static void AssessQuiz(string path1, string path2, int sheet1, int sheet2, int totalMark, int percentage)
@@ -28,12 +33,13 @@ namespace ExcelMP
                 {
                     ExcelWorksheet secSheet = secPackage.Workbook.Worksheets[sheet2];
                     var address_space2 = secSheet.Dimension;
+                    
                     for (int i = 2; i <= address_space2.End.Row; i++) //row
                     {
                         List<double> quizMarks = new List<double>();
                         for (int c = 3; c <= address_space2.End.Column; c++) //columns
                         {
-                            if (secSheet.Cells[i, c].Value != null )
+                            if (secSheet.Cells[i, c].Value != null)
                             {
                                 string value = Filter(secSheet.Cells[i, c].Value.ToString()); //removing unnecessary characters from them excel file
                                 if (value != "")
@@ -44,7 +50,7 @@ namespace ExcelMP
                                 {
                                     quizMarks.Add(0);
                                 }
-                                
+
                             }
                             else
                             {
@@ -65,6 +71,8 @@ namespace ExcelMP
                         //Names.Add(secSheet.Cells[i, 2].Value.ToString());
                         if (cell.Value != null)
                         {
+
+
                             mainSheet.SetValue(i, 1, Filter(cell.Value.ToString())); //setting ID
                             mainSheet.SetValue(i, 2, secSheet.Cells[i, 2].Value.ToString()); //setting Name
                             mainSheet.SetValue(i, 3, avg); //setting avg
@@ -72,12 +80,12 @@ namespace ExcelMP
                             double perc = (avg / totalMark) * percentage;
                             mainSheet.SetValue(i, 4, perc); //setting percentage
                         }
-                       
+
                     }
 
 
                 }
-                mainPackage.Dispose();
+                //mainPackage.Dispose();
                 mainPackage.Save();
 
 
@@ -256,7 +264,7 @@ namespace ExcelMP
                 var excel = new ExcelPackage(new FileInfo(path));
                 var ws = excel.Workbook.Worksheets.Add("Sheet1");
 
-                DataTable table = new DataTable();
+                System.Data.DataTable table = new System.Data.DataTable();
                 table.Columns.Add("Id", typeof(string));
                 table.Columns.Add("Name", typeof(string));
                 table.Columns.Add("Quiz Average", typeof(string));
@@ -269,6 +277,35 @@ namespace ExcelMP
                 table.Columns.Add("Exam 3 Percentage", typeof(string));
                 table.Columns.Add("Total Percentage", typeof(string));
                 ws.Cells.LoadFromDataTable(table, true);
+
+                /*Color Settings*/
+                ws.Column(1).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                ws.Column(1).Style.Fill.BackgroundColor.SetColor(Color.LightCyan);
+                ws.Column(3).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                ws.Column(3).Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
+                ws.Column(5).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                ws.Column(5).Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
+                ws.Column(7).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                ws.Column(7).Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
+                ws.Column(9).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                ws.Column(9).Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
+                ws.Column(11).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                ws.Column(11).Style.Fill.BackgroundColor.SetColor(Color.LightCyan);
+
+
+                /**/
+                ws.Column(1).Width = 12.5d;
+                ws.Column(2).Width = 36.5d;
+                ws.Column(3).Width = 13d;
+                ws.Column(4).Width = 16d;
+                ws.Column(5).Width = 8d;
+                ws.Column(6).Width = 18d;
+                ws.Column(7).Width = 8d;
+                ws.Column(8).Width = 18d;
+                ws.Column(8).Width = 18d;
+                ws.Column(9).Width = 8d;
+                ws.Column(10).Width = 18d;
+                ws.Column(11).Width = 18d;
                 excel.Save();
 
 
@@ -280,6 +317,63 @@ namespace ExcelMP
             Regex digitsOnly = new Regex(@"[^\d\.,]");
             return digitsOnly.Replace(input, "");
         }
+
+        public static void OpenXLSXFile(string filePath)
+        {
+
+
+
+            if (File.Exists(filePath))
+            {
+
+                try
+                {
+                    Application excel = new Application();
+                    excel.Visible = true;
+                    Workbook wb = excel.Workbooks.Open(filePath);
+
+                    excel.Width = 400d;
+                    wb.Close();
+                    excel.Quit();
+                }
+                catch (Exception)
+                {
+                    
+                    //do nothing
+                }
+                
+               
+
+
+
+            }
+            else
+            {
+                throw new FileNotFoundException("File was not found");
+            }
+
+         
+           
+         
+
+           
+            
+            
+
+        }
+
+        //private static void SetNewCulture()
+        //{
+        //    oldCulture = Thread.CurrentThread.CurrentCulture;
+        //    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+
+        //}
+
+        //private static void ReSetOldCulture() 
+        //{
+        //    Thread.CurrentThread.CurrentCulture = oldCulture;
+        //}
+
 
 
        

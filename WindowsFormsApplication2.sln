@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication2", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelMP", "ExcelMP\ExcelMP.csproj", "{7CC05562-1AF7-40B3-848F-2DF804707F52}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,12 @@ Global
 		{7CC05562-1AF7-40B3-848F-2DF804707F52}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7CC05562-1AF7-40B3-848F-2DF804707F52}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7CC05562-1AF7-40B3-848F-2DF804707F52}.Release|x86.ActiveCfg = Release|Any CPU
+		{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}.Debug|Any CPU.ActiveCfg = Debug
+		{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}.Debug|x86.ActiveCfg = Debug
+		{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}.Release|Any CPU.ActiveCfg = Release
+		{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}.Release|Mixed Platforms.ActiveCfg = Release
+		{3CEE4E22-ABC5-49CF-AB4D-53B1F780CBB3}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelMP.dll" size="13824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelMP.dll" size="13312">
       <assemblyIdentity name="ExcelMP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>l4vqmIv+77HWyde3It/QXw1/eJc=</dsig:DigestValue>
+        <dsig:DigestValue>uic1gu2LKT+SuUye98YNuRh8qHY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>DyelDScO4FnO2chUwBNNQSWRcgU=</dsig:DigestValue>
+        <dsig:DigestValue>TlNitw82MDOibR5YMOswLB35JSg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,13 +98,13 @@
       <dsig:DigestValue>UMLlbq4oDH+OUFdi4RjGiaMz1kk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WindowsFormsApplication2.exe.config" size="1644">
+  <file name="WindowsFormsApplication2.exe.config" size="1712">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+UxxA+oLuJANC2ssIPKaaCe6TOU=</dsig:DigestValue>
+      <dsig:DigestValue>vk1dlIMNi7n6Hy0voOxFKTIq/vM=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

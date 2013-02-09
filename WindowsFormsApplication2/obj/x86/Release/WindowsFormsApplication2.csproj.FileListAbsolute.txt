@@ -38,14 +38,7 @@ C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x8
 C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.TrustInfo.xml
 C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.exe.manifest
 C:\Users\mohsen\Desktop\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.application
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe.config
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.csproj.ResolveComReference.cache
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.exe
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.pdb
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe.manifest
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.application
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.pdb
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\EPPlus.dll
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\ExcelMP.dll
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\ExcelMP.pdb
@@ -57,6 +50,13 @@ C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\ob
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication1.Form3.resources
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.csproj.GenerateResource.Cache
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.TrustInfo.xml
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.exe.manifest
-C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.application
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\QUT Analyzer v1.0.exe.config
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\QUT Analyzer v1.0.exe.manifest
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\QUT Analyzer v1.0.application
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\QUT Analyzer v1.0.exe
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\bin\Release\QUT Analyzer v1.0.pdb
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\QUT Analyzer v1.0.TrustInfo.xml
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\QUT Analyzer v1.0.exe.manifest
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\QUT Analyzer v1.0.application
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\QUT Analyzer v1.0.exe
+C:\Users\mohsen\Desktop\QUT\QUT-SpreadSheet-Analyser\WindowsFormsApplication2\obj\x86\Release\QUT Analyzer v1.0.pdb
